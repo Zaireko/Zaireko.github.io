@@ -1,0 +1,11 @@
+.imagen-perfil {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabla {
+    text-align: center;
+    vertical-align: middle;
+}
