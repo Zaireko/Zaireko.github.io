@@ -16,7 +16,7 @@ export class WorkExperienceComponent implements OnInit {
   fecha_fin : string = "fake end date";
   ciudad : string = "fake city";
   pais : string = "fake country";
-  logros: string[] = [];
+  logros: any[] = [];
 
   ngOnInit() {
     this.workexService.getWE().subscribe((data: any) => {
