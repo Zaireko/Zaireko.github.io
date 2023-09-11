@@ -1,12 +1,10 @@
-<div>
-  <p><strong>Puesto:</strong> {{ puesto }}</p>
-  <p><strong>Empresa:</strong> {{ empresa }}</p>
-  <p><strong>Fecha de Inicio:</strong> {{ fecha_ini }}</p>
-  <p><strong>Fecha de Fin:</strong> {{ fecha_fin }}</p>
-  <p><strong>Ciudad:</strong> {{ ciudad }}</p>
-  <p><strong>País:</strong> {{ pais }}</p>
-  <p><strong>Logros:</strong></p>
+<div *ngFor="let experience of experiences">
+  <h2>{{ experience.puesto }}</h2>
+  <p>{{ experience.empresa }}</p>
+  <p>{{ experience.fecha_ini }} - {{ experience.fecha_fin }}</p>
+  <p>{{ experience.ciudad }}, {{ experience.pais }}</p>
+  
   <ul>
-    <li *ngFor="let logro of logros">{{ logro.logro }}</li>
+    <li *ngFor="let logro of experience.logros">{{ logro.logro }}</li>
   </ul>
 </div>
