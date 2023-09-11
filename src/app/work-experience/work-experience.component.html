@@ -1,1 +1,11 @@
-<p>work-experience works!</p>
+<div *ngFor="let experience of experiences">
+  <h2>{{ experience.puesto }}</h2>
+  <p>{{ experience.empresa }}</p>
+  <p>{{ experience.fecha_ini }} - {{ experience.fecha_fin }}</p>
+  <p>{{ experience.ciudad }}, {{ experience.pais }}</p>
+  
+  <ul>
+    <li *ngFor="let logro of experience.logros">{{ logro.logro }}</li>
+  </ul>
+  
+</div>
