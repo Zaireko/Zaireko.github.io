@@ -1,18 +1,19 @@
-<tr>
-    <td class="tabla">
-        {{name}} <br>
-        {{titulo}} <br>
-        {{objetivo}} <br>
-    </td>
-
-    <td>
-        <img src="{{ foto }}" class="imagen-perfil">
-    </td>
-
-    <td class="tabla">
-        {{email}} <br>
-        {{celular}} <br>
-        {{ubicacion}} <br>
-        {{redsocial}}
-    </td>
-</tr>
+<div class="container">
+    <div class="tableleft">
+      <strong>Nombre: </strong>{{ name }} <br>
+      <strong>Titulo: </strong>{{ titulo }} <br>
+      <strong>Objetivo: </strong>{{ objetivo }} <br>
+    </div>
+  
+    <div class="tablemiddle">
+      <img src="{{ foto }}" class="imagen-perfil">
+    </div>
+  
+    <div class="tableright">
+      <strong>Email: </strong>{{ email }} <br>
+      <strong>Telefono: </strong>{{ celular }} <br>
+      <Strong>Ubicacion: </Strong>{{ ubicacion }} <br>
+      <strong>Redes: </strong>{{ redsocial }}
+    </div>
+  </div>
+  
