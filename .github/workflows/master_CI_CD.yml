@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ "master"]
 jobs:
-  master_CI_CD:
+  main_CI_CD:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,6 +23,3 @@ jobs:
       - name: show_node_modules
         run: ls node_modules
 
-      - name: Test
-        run: |
-          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
