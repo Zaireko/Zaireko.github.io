@@ -4,13 +4,11 @@ import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs/';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class HeaderService {
-
-  apiURL = 'http://localhost:8080/header'
+export class ScliService {
+  apiURL = 'http://localhost:8080/scli'
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +19,7 @@ export class HeaderService {
     })
   }
 
-  getHeader() :Observable<any> {
+  getSCLI() :Observable<any> {
     return this.http.get<any>(this.apiURL, this.httpOptions)
     .pipe(
       retry(1),

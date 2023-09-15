@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Habilidades </h2>
+    <ul class="skills-list">
+      <li *ngFor="let skill of skills" class="skill-item">
+        {{ skill.skill }}
+      </li>
+    </ul>
+  
+    <h2>Certificados</h2>
+    <ul>
+      <li *ngFor="let certificate of certificates">{{ certificate.certificate }}</li>
+    </ul>
+  
+    <h2>Intereses</h2>
+    <ul class="interests-list">
+      <li *ngFor="let interest of interests" class="interest-item">
+        {{ interest.interest }}
+      </li>
+    </ul>
+  </div>
+  
