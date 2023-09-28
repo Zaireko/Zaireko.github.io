@@ -1,0 +1,10 @@
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.interest-item {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
