@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScliComponent } from './scli.component';
+import { InterestsComponent } from './interests.component';
 
-describe('ScliComponent', () => {
-  let component: ScliComponent;
-  let fixture: ComponentFixture<ScliComponent>;
+describe('InterestsComponent', () => {
+  let component: InterestsComponent;
+  let fixture: ComponentFixture<InterestsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScliComponent]
+      declarations: [InterestsComponent]
     });
-    fixture = TestBed.createComponent(ScliComponent);
+    fixture = TestBed.createComponent(InterestsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
