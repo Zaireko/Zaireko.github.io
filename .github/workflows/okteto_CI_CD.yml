@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ "okteto"]
 jobs:
-  release_ci_cd:
+  okteto_ci_cd:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
