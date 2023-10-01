@@ -8,7 +8,7 @@ import { BehaviorSubject } from 'rxjs/';
   providedIn: 'root'
 })
 export class SkillsService {
-  apiURL = 'http://localhost:8080/skills'
+  apiURL = 'https://node-api2023-service-zaireko.cloud.okteto.net/skills'
 
   constructor(private http: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs/';
   providedIn: 'root'
 })
 export class CertificatesService {
-  apiURL = 'http://localhost:8080/certificates'
+  apiURL = 'https://node-api2023-service-zaireko.cloud.okteto.net/certificates'
 
   constructor(private http: HttpClient) { }
 
